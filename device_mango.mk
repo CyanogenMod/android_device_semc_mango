@@ -22,9 +22,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-PRODUCT_PACKAGES += \
-    hostap
-
 DISABLE_DEXPREOPT := false
 
 # These is the hardware-specific overlay, which points to the location
@@ -38,11 +35,10 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/mango/prebuilt/init.semc.rc:root/init.semc.rc \
-    device/semc/mango/prebuilt/ueventd.mogami.rc:root/ueventd.mogami.rc \
+    device/semc/msm7x30-common/prebuilt/ueventd.mogami.rc:root/ueventd.mogami.rc \
+    device/semc/msm7x30-common/prebuilt/init.mogami.rc:root/init.semc.rc \
     device/semc/mango/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/mango/prebuilt/logo.rle:root/logo.rle \
-    device/semc/mango/prebuilt/filler:root/filler \
+    device/semc/msm7x30-common/prebuilt/logo_M.rle:root/logo.rle \
     device/semc/mango/prebuilt/bootrec:root/sbin/bootrec \
     device/semc/mango/recovery.fstab:root/recovery.fstab 
 
@@ -63,14 +59,12 @@ PRODUCT_COPY_FILES += \
 
 #WIFI modules and configs
 PRODUCT_COPY_FILES += \
-    device/semc/mango/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/semc/mango/prebuilt/hostapd.conf:system/etc/wifi/softap/hostapd.conf \
-    device/semc/mango/modules/sdio.ko:root/modules/sdio.ko \
-    device/semc/mango/modules/tiap_drv.ko:root/modules/tiap_drv.ko \
-    device/semc/mango/modules/tiwlan_drv.ko:root/modules/tiwlan_drv.ko \
-    device/semc/mango/prebuilt/10dnsconf:system/etc/init.d/10dnsconf \
-    device/semc/mango/prebuilt/10hostapconf:system/etc/init.d/10hostapconf \
-    device/semc/mango/prebuilt/dnsmasq.conf:system/etc/wifi/dnsmasq.conf \
+    device/semc/msm7x30-common/prebuilt/tiap_loader.sh:system/bin/tiap_loader.sh \
+    device/semc/msm7x30-common/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    device/semc/msm7x30-common/prebuilt/hostapd.conf:system/etc/wifi/softap/hostapd.conf \
+    device/semc/msm7x30-common/modules/sdio.ko:root/modules/sdio.ko \
+    device/semc/msm7x30-common/modules/tiap_drv.ko:root/modules/tiap_drv.ko \
+    device/semc/msm7x30-common/modules/tiwlan_drv.ko:root/modules/tiwlan_drv.ko 
 
 # mango uses MDPI artwork where available
 PRODUCT_LOCALES += mdpi
@@ -96,7 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=tiwlan0 \
     wifi.supplicant_scan_interval=15 \
     ro.sf.lcd_density=160 \
-    ro.sf.hwrotation=180 \
     keyguard.no_require_sim=true \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y \

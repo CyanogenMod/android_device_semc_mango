@@ -51,6 +51,7 @@ adb pull /system/lib/libpbmlib.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libqmi.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libqueue.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libuim.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libreference-ril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libril-qc-1.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwms.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwmsts.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -115,13 +116,6 @@ adb pull /system/etc/wifi/softap/hostapd.conf ../../../vendor/$VENDOR/$DEVICE/pr
 adb pull /system/etc/tiwlan_firmware.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/wifi/softap/tiwlan_ap.ini ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/wifi/softap/softap_firmware.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-## Adreno 200 files
-adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
-adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## Other libraries and proprietary binaries
 adb pull /system/lib/libaudioalsa.so ../../../vendor/$VENDOR/$DEVICE/proprietary

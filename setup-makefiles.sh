@@ -70,6 +70,7 @@ vendor/__VENDOR__/__DEVICE__/proprietary/libpbmlib.so:system/lib/libpbmlib.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libqmi.so:system/lib/libqmi.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libqueue.so:system/lib/libqueue.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libuim.so:system/lib/libuim.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libreference-ril.so:system/lib/libreference-ril.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libril-qc-1.so:system/lib/libril-qc-1.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libwms.so:system/lib/libwms.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libwmsts.so:system/lib/libwmsts.so \\
@@ -137,14 +138,6 @@ vendor/__VENDOR__/__DEVICE__/proprietary/tiwlan_firmware.bin:system/etc/wifi/tiw
 vendor/__VENDOR__/__DEVICE__/proprietary/tiwlan_ap.ini:system/etc/wifi/softap/tiwlan_ap.ini \\
 vendor/__VENDOR__/__DEVICE__/proprietary/softap_firmware.bin:system/etc/wifi/softap/tiwlan_firmware_ap.bin 
 
-## Adreno 200 files
-PRODUCT_COPY_FILES += \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libgsl.so:system/lib/libgsl.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so
-
 ## Other libraries and proprietary binaries
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \\
@@ -170,6 +163,15 @@ vendor/__VENDOR__/__DEVICE__/proprietary/touch_mango_sony_type1.hex:system/etc/f
 vendor/__VENDOR__/__DEVICE__/proprietary/touch_mango_sony_type2.hex:system/etc/firmware/touch_mango_sony_type2.hex \\
 vendor/__VENDOR__/__DEVICE__/proprietary/touch_mango_seiko.hex:system/etc/firmware/touch_mango_seiko.hex \\
 vendor/__VENDOR__/__DEVICE__/proprietary/touch_mango_hitachi.hex:system/etc/firmware/touch_mango_hitachi.hex
+
+## Adreno 200 files
+PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libgsl.so:system/lib/libgsl.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so
+
 
 EOF
 
