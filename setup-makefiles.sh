@@ -104,8 +104,16 @@ vendor/__VENDOR__/__DEVICE__/proprietary/libcameraextensionjni.so:system/lib/lib
 vendor/__VENDOR__/__DEVICE__/proprietary/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libface.so:system/lib/libface.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libgemini.so:system/lib/libgemini.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libcameralight.so:system/lib/libcameralight.so
-
+vendor/__VENDOR__/__DEVICE__/proprietary/libcameralight.so:system/lib/libcameralight.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/APT00YP0.dat:system/usr/semc/camera/APT00YP0.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/APT00YP0_MT9V144.dat:system/usr/semc/camera/APT00YP0_MT9V144.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/KMO05BN0.dat:system/usr/semc/camera/KMO05BN0.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/KMO05BN0_BH6476.dat:system/usr/semc/camera/KMO05BN0_BH6476.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/KMO05BN0_IMX072.dat:system/usr/semc/camera/KMO05BN0_IMX072.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/LM3561_00_flash.dat:system/usr/semc/camera/LM3561_00_flash.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/STW05BN0.dat:system/usr/semc/camera/STW05BN0.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/STW05BN0_BH6476.dat:system/usr/semc/camera/STW05BN0_BH6476.dat \\
+vendor/__VENDOR__/__DEVICE__/proprietary/STW05BN0_IMX072.dat:system/usr/semc/camera/STW05BN0_IMX072.dat
 
 ## FIRMWARE
 PRODUCT_COPY_FILES += \\
@@ -136,7 +144,8 @@ vendor/__VENDOR__/__DEVICE__/proprietary/init.qcom.bt.sh:system/etc/init.bt.sh \
 vendor/__VENDOR__/__DEVICE__/proprietary/tiwlan.ini:system/etc/wifi/tiwlan.ini \\
 vendor/__VENDOR__/__DEVICE__/proprietary/tiwlan_firmware.bin:system/etc/wifi/tiwlan_firmware.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/tiwlan_ap.ini:system/etc/wifi/softap/tiwlan_ap.ini \\
-vendor/__VENDOR__/__DEVICE__/proprietary/softap_firmware.bin:system/etc/wifi/softap/tiwlan_firmware_ap.bin 
+vendor/__VENDOR__/__DEVICE__/proprietary/softap_firmware.bin:system/etc/wifi/softap/tiwlan_firmware_ap.bin \\
+vendor/__VENDOR__/__DEVICE__/proprietary/nvimport:system/bin/nvimport
 
 ## Other libraries and proprietary binaries
 PRODUCT_COPY_FILES += \\
