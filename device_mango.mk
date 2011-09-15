@@ -29,6 +29,8 @@ DISABLE_DEXPREOPT := false
 # application settings that are stored in resourced.
 DEVICE_PACKAGE_OVERLAYS += device/semc/mango/overlay
 
+PRODUCT_PACKAGES += KeyboardChanger
+
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
 	device/semc/mango/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
@@ -87,6 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.gprsclass=10 \
     ro.telephony.default_network=0 \
     ro.telephony.call_ring.multiple=false \
+    ro.telephony.ril_class=semc \
     wifi.interface=tiwlan0 \
     wifi.supplicant_scan_interval=15 \
     ro.sf.lcd_density=160 \

@@ -46,8 +46,9 @@ vendor/__VENDOR__/__DEVICE__/proprietary/AVRCP.kl:system/usr/keylayout/AVRCP.kl 
 vendor/__VENDOR__/__DEVICE__/proprietary/msm_pmic_pwr_key.kl:system/usr/keylayout/msm_pmic_pwr_key.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/pm8058-keypad.kl:system/usr/keylayout/pm8058-keypad.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kl:system/usr/keylayout/qwerty.kl \\
-vendor/__VENDOR__/__DEVICE__/proprietary/simple_remote.kl:system/usr/keylayout/simple_remote.kl
-
+vendor/__VENDOR__/__DEVICE__/proprietary/simple_remote.kl:system/usr/keylayout/simple_remote.kl \\
+vendor/__VENDOR__/__DEVICE__/proprietary/cyttsp_key.kl:system/usr/keylayout/cyttsp_key.kl \\
+vendor/__VENDOR__/__DEVICE__/proprietary/slidercounter:system/bin/slidercounter
 
 ## RIL related stuff 
 PRODUCT_COPY_FILES += \\

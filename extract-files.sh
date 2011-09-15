@@ -30,6 +30,8 @@ adb pull /system/usr/keylayout/msm_pmic_pwr_key.kl ../../../vendor/$VENDOR/$DEVI
 adb pull /system/usr/keylayout/pm8058-keypad.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/qwerty.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/simple_remote.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/cyttsp_key.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/slidercounter ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## RIL related stuff 
 adb pull /system/lib/libril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
