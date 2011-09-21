@@ -17,4 +17,6 @@ TARGET_OTA_ASSERT_DEVICE := SK17i,SK17a,mango
 
 BOARD_CAMERA_USE_GETBUFFERINFO := true
 
+#BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/semc/mango/recovery/recovery_ui.c
+
 -include device/semc/msm7x30-common/Android.mk
