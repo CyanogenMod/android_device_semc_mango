@@ -15,6 +15,7 @@ WIFI_EXT_MODULE_NAME := sdio
 
 TARGET_OTA_ASSERT_DEVICE := SK17i,SK17a,mango
 
+BOARD_OVERLAY_FORMAT_YCrCb_420_SP := true
 BOARD_CAMERA_USE_GETBUFFERINFO := true
 
 #BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/semc/mango/recovery/recovery_ui.c
