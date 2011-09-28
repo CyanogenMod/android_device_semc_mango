@@ -183,6 +183,71 @@ vendor/__VENDOR__/__DEVICE__/proprietary/libq3dtools_adreno200.so:system/lib/egl
 vendor/__VENDOR__/__DEVICE__/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so
 
+#hardware keyboard layout
+PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/keyprint.xml:system/usr/keyboard-config/keyprint.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/scancode_mapping.xml:system/usr/keyboard-config//scancode_mapping.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ara.xml:system/usr/keyboard-config/languages/language_ara.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_bos.xml:system/usr/keyboard-config/languages/language_bos.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_bul.xml:system/usr/keyboard-config/languages/language_bul.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_cat.xml:system/usr/keyboard-config/languages/language_cat.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ces.xml:system/usr/keyboard-config/languages/language_ces.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_dan.xml:system/usr/keyboard-config/languages/language_dan.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_deu.xml:system/usr/keyboard-config/languages/language_deu.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ell.xml:system/usr/keyboard-config/languages/language_ell.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_eng.xml:system/usr/keyboard-config/languages/language_eng.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_esp.xml:system/usr/keyboard-config/languages/language_esp.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_est.xml:system/usr/keyboard-config/languages/language_est.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_eus.xml:system/usr/keyboard-config/languages/language_eus.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_fas.xml:system/usr/keyboard-config/languages/language_fas.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_fin.xml:system/usr/keyboard-config/languages/language_fin.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_fra.xml:system/usr/keyboard-config/languages/language_fra.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_glg.xml:system/usr/keyboard-config/languages/language_glg.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_heb.xml:system/usr/keyboard-config/languages/language_heb.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_hrv.xml:system/usr/keyboard-config/languages/language_hrv.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_hun.xml:system/usr/keyboard-config/languages/language_hun.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ind.xml:system/usr/keyboard-config/languages/language_ind.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_isl.xml:system/usr/keyboard-config/languages/language_isl.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ita.xml:system/usr/keyboard-config/languages/language_ita.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_jav.xml:system/usr/keyboard-config/languages/language_jav.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_kaz.xml:system/usr/keyboard-config/languages/language_kaz.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_lav.xml:system/usr/keyboard-config/languages/language_lav.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_lit.xml:system/usr/keyboard-config/languages/language_lit.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_mkd.xml:system/usr/keyboard-config/languages/language_mkd.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_msa.xml:system/usr/keyboard-config/languages/language_msa.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_nld.xml:system/usr/keyboard-config/languages/language_nld.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_nor.xml:system/usr/keyboard-config/languages/language_nor.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_pol.xml:system/usr/keyboard-config/languages/language_pol.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_por.xml:system/usr/keyboard-config/languages/language_por.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ron.xml:system/usr/keyboard-config/languages/language_ron.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_rus.xml:system/usr/keyboard-config/languages/language_rus.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_slk.xml:system/usr/keyboard-config/languages/language_slk.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_slv.xml:system/usr/keyboard-config/languages/language_slv.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_sqi.xml:system/usr/keyboard-config/languages/language_sqi.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_srp.xml:system/usr/keyboard-config/languages/language_srp.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_sun.xml:system/usr/keyboard-config/languages/language_sun.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_swe.xml:system/usr/keyboard-config/languages/language_swe.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_tgl.xml:system/usr/keyboard-config/languages/language_tgl.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_tha.xml:system/usr/keyboard-config/languages/language_tha.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_tur.xml:system/usr/keyboard-config/languages/language_tur.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_ukr.xml:system/usr/keyboard-config/languages/language_ukr.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/language_vie.xml:system/usr/keyboard-config/languages/language_vie.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/arabic.xml:system/usr/keyboard-config/layouts/arabic.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/azerty.xml:system/usr/keyboard-config/layouts/azerty.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/bopomofo.xml:system/usr/keyboard-config/layouts/bopomofo.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/cyrillic.xml:system/usr/keyboard-config/layouts/cyrillic.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/greek.xml:system/usr/keyboard-config/layouts/greek.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/hebrew.xml:system/usr/keyboard-config/layouts/hebrew.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/korean.xml:system/usr/keyboard-config/layouts/korean.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-br.xml:system/usr/keyboard-config/layouts/qwerty-br.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-cn-hk.xml:system/usr/keyboard-config/layouts/qwerty-cn-hk.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-en.xml:system/usr/keyboard-config/layouts/qwerty-en.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-jp.xml:system/usr/keyboard-config/layouts/qwerty-jp.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-no-dk.xml:system/usr/keyboard-config/layouts/qwerty-no-dk.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-se-fi.xml:system/usr/keyboard-config/layouts/qwerty-se-fi.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/qwertz.xml:system/usr/keyboard-config/layouts/qwertz.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/thai.xml:system/usr/keyboard-config/layouts/thai.xml 
+
 
 EOF
 

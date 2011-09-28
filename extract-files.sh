@@ -149,5 +149,70 @@ adb pull /system/etc/firmware/touch_mango_sony_type2.hex ../../../vendor/$VENDOR
 adb pull /system/etc/firmware/touch_mango_seiko.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/touch_mango_hitachi.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+#hardware keyboard layout
+adb pull /system/usr/keyboard-config/keyprint.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/scancode_mapping.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ara.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_bos.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_bul.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_cat.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ces.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_dan.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_deu.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ell.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_eng.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_esp.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_est.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_eus.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_fas.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_fin.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_fra.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_glg.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_heb.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_hrv.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_hun.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ind.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_isl.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ita.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_jav.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_kaz.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_lav.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_lit.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_mkd.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_msa.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_nld.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_nor.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_pol.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_por.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ron.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_rus.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_slk.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_slv.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_sqi.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_srp.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_sun.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_swe.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_tgl.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_tha.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_tur.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_ukr.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/languages/language_vie.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/arabic.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/azerty.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/bopomofo.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/cyrillic.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/greek.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/hebrew.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/korean.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-br.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-cn-hk.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-en.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-jp.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-no-dk.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwerty-se-fi.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/qwertz.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keyboard-config/layouts/thai.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+
 ./setup-makefiles.sh
 
