@@ -248,6 +248,12 @@ vendor/__VENDOR__/__DEVICE__/proprietary/qwerty-se-fi.xml:system/usr/keyboard-co
 vendor/__VENDOR__/__DEVICE__/proprietary/qwertz.xml:system/usr/keyboard-config/layouts/qwertz.xml \\
 vendor/__VENDOR__/__DEVICE__/proprietary/thai.xml:system/usr/keyboard-config/layouts/thai.xml 
 
+#ANT*
+PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/AntHalService.apk:system/app/AntHalService.apk \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libanthal.so:system/lib/libanthal.so
 
 EOF
 

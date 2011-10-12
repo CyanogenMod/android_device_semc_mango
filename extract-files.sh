@@ -213,6 +213,11 @@ adb pull /system/usr/keyboard-config/layouts/qwerty-se-fi.xml ../../../vendor/$V
 adb pull /system/usr/keyboard-config/layouts/qwertz.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keyboard-config/layouts/thai.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+#ANT*
+adb pull /system/app/AntHalService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/permissions/com.dsi.ant.antradio_library.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/framework/com.dsi.ant.antradio_library.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libanthal.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ./setup-makefiles.sh
 
