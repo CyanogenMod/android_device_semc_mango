@@ -38,10 +38,10 @@ echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
 # LMU AS3676 Configuration
 dev=/sys/devices/i2c-0/0-0040/leds
 echo 1 > $dev/lcd-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
-echo 3,2,2,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
-echo 8000 > $dev/button-backlight-rgb1/max_current
-echo 8000 > $dev/button-backlight-rgb2/max_current
-echo 1,30,255,54,52,1,65 > $dev/lcd-backlight/als/curve  # ALS curve display BL [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 3,0,2,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
+echo 2000 > $dev/button-backlight-rgb1/max_current
+echo 2000 > $dev/button-backlight-rgb2/max_current
+echo 1,70,255,52,24,5,80 > $dev/lcd-backlight/als/curve  # ALS curve display BL [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
 echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb1/als/curve  # ALS curve key LED 1 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
 echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb2/als/curve  # ALS curve key LED 2 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
 echo 3,71,255,64,32,5,37 > $dev/red/als/curve  # ALS curve RGB(red) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
