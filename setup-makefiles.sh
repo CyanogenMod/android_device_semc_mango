@@ -39,6 +39,9 @@ DEVICE=mango
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/us104-keyboard.kcm.bin:system/usr/keychars/us104-keyboard.kcm.bin \\
+vendor/__VENDOR__/__DEVICE__/proprietary/us104-keyboard.kl:system/usr/keylayout/104-keyboard.kl \\
+vendor/__VENDOR__/__DEVICE__/proprietary/usb_mouse.kl:system/usr/keylayout/usb_mouse.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/pm8058-keypad.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \\

@@ -22,7 +22,6 @@ mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Prebuilt kl keymaps
 adb pull /system/usr/keychars/qwerty.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/usr/keychars/qwerty.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keychars/qwerty2.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/atdaemon.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/AVRCP.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -32,6 +31,9 @@ adb pull /system/usr/keylayout/qwerty.kl ../../../vendor/$VENDOR/$DEVICE/proprie
 adb pull /system/usr/keylayout/simple_remote.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/cyttsp_key.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/slidercounter ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keychars/us104-keyboard.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/us104-keyboard.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/usb_mouse.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## RIL related stuff 
 adb pull /system/lib/libril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -212,6 +214,13 @@ adb pull /system/usr/keyboard-config/layouts/qwerty-no-dk.xml ../../../vendor/$V
 adb pull /system/usr/keyboard-config/layouts/qwerty-se-fi.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keyboard-config/layouts/qwertz.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keyboard-config/layouts/thai.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+## Adreno 200 files
+adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
+adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 #ANT*
 adb pull /system/app/AntHalService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
