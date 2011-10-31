@@ -10,23 +10,53 @@
         android:textSize="15sp"
         android:paddingBottom="10dip">
     </TextView>
-    <TextView android:text="@string/current"></TextView>
-    <TextView android:text="@string/qwertz" android:id="@+id/TVcurrent"></TextView>
-    <RadioButton android:text="@string/radio_button_1" android:id="@+id/rbqwertz"/>
-    <RadioButton android:text="@string/radio_button_2" android:id="@+id/rbqwertyen" />
-    <RadioButton android:text="@string/radio_button_3" android:id="@+id/rbazerty" />
-    <RadioButton android:text="@string/radio_button_4" android:id="@+id/rbqwertybr" />
-    <RadioButton android:text="@string/radio_button_5" android:id="@+id/rbqwertynodk" />
-    <RadioButton android:text="@string/radio_button_6" android:id="@+id/rbqwertysefi" />
-    <RadioButton android:text="@string/radio_button_7" android:id="@+id/rblatinonarabic" />
-    <RadioButton android:text="@string/radio_button_8" android:id="@+id/rblatinonarabicazerty" />
-    <RadioButton android:text="@string/radio_button_9" android:id="@+id/rblatinonbopomofo" />
-    <RadioButton android:text="@string/radio_button_10" android:id="@+id/rblatinoncyrillic" />
-    <RadioButton android:text="@string/radio_button_11" android:id="@+id/rblatinongreek" />
-    <RadioButton android:text="@string/radio_button_12" android:id="@+id/rblatinonhebrew" />
-    <RadioButton android:text="@string/radio_button_13" android:id="@+id/rblatinonkorean" />
-    <RadioButton android:text="@string/radio_button_14" android:id="@+id/rblatinonpinyin" />
-    <RadioButton android:text="@string/radio_button_15" android:id="@+id/rblatinonthai" />
+    <RadioButton android:text="@string/radio_button_1" android:id="@+id/rbAR"/>
+    <RadioButton android:text="@string/radio_button_2" android:id="@+id/rbARO" />
+    <RadioButton android:text="@string/radio_button_3" android:id="@+id/rbAT" />
+    <RadioButton android:text="@string/radio_button_4" android:id="@+id/rbBAL" />
+    <RadioButton android:text="@string/radio_button_5" android:id="@+id/rbBE" />
+    <RadioButton android:text="@string/radio_button_6" android:id="@+id/rbCE1" />
+    <RadioButton android:text="@string/radio_button_7" android:id="@+id/rbCE2" />
+    <RadioButton android:text="@string/radio_button_8" android:id="@+id/rbCE3" />
+    <RadioButton android:text="@string/radio_button_9" android:id="@+id/rbCH" />
+    <RadioButton android:text="@string/radio_button_10" android:id="@+id/rbCHTTW" />
+    <RadioButton android:text="@string/radio_button_11" android:id="@+id/rbCN" />
+    <RadioButton android:text="@string/radio_button_12" android:id="@+id/rbCZ" />
+    <RadioButton android:text="@string/radio_button_13" android:id="@+id/rbDE" />
+    <RadioButton android:text="@string/radio_button_14" android:id="@+id/rbDK" />
+    <RadioButton android:text="@string/radio_button_15" android:id="@+id/rbES" />
+	<RadioButton android:text="@string/radio_button_16" android:id="@+id/rbFR" />
+	<RadioButton android:text="@string/radio_button_17" android:id="@+id/rbGBA" />
+	<RadioButton android:text="@string/radio_button_18" android:id="@+id/rbGR" />
+	<RadioButton android:text="@string/radio_button_19" android:id="@+id/rbHK" />
+	<RadioButton android:text="@string/radio_button_20" android:id="@+id/rbHR" />
+	<RadioButton android:text="@string/radio_button_21" android:id="@+id/rbIBE" />
+	<RadioButton android:text="@string/radio_button_22" android:id="@+id/rbIE" />
+	<RadioButton android:text="@string/radio_button_23" android:id="@+id/rbIN" />
+	<RadioButton android:text="@string/radio_button_24" android:id="@+id/rbIT" />
+	<RadioButton android:text="@string/radio_button_25" android:id="@+id/rbMEA" />
+	<RadioButton android:text="@string/radio_button_26" android:id="@+id/rbMEL" />
+	<RadioButton android:text="@string/radio_button_27" android:id="@+id/rbMY" />
+	<RadioButton android:text="@string/radio_button_28" android:id="@+id/rbNG1" />
+	<RadioButton android:text="@string/radio_button_29" android:id="@+id/rbNG2" />
+	<RadioButton android:text="@string/radio_button_30" android:id="@+id/rbNL" />
+	<RadioButton android:text="@string/radio_button_31" android:id="@+id/rbNO" />
+	<RadioButton android:text="@string/radio_button_32" android:id="@+id/rbNZ" />
+	<RadioButton android:text="@string/radio_button_33" android:id="@+id/rbPH" />
+	<RadioButton android:text="@string/radio_button_34" android:id="@+id/rbPL" />
+	<RadioButton android:text="@string/radio_button_35" android:id="@+id/rbPT" />
+	<RadioButton android:text="@string/radio_button_36" android:id="@+id/rbRO" />
+	<RadioButton android:text="@string/radio_button_37" android:id="@+id/rbRU" />
+	<RadioButton android:text="@string/radio_button_38" android:id="@+id/rbSA" />
+	<RadioButton android:text="@string/radio_button_39" android:id="@+id/rbSE" />
+	<RadioButton android:text="@string/radio_button_40" android:id="@+id/rbSG" />
+	<RadioButton android:text="@string/radio_button_41" android:id="@+id/rbSI" />
+	<RadioButton android:text="@string/radio_button_42" android:id="@+id/rbSK" />
+	<RadioButton android:text="@string/radio_button_43" android:id="@+id/rbTH" />
+	<RadioButton android:text="@string/radio_button_44" android:id="@+id/rbTR" />
+	<RadioButton android:text="@string/radio_button_45" android:id="@+id/rbTW" />
+	<RadioButton android:text="@string/radio_button_46" android:id="@+id/rbUA" />
+	<RadioButton android:text="@string/radio_button_47" android:id="@+id/rbUK" />
     <Button android:layout_height="wrap_content" android:id="@+id/button1" android:text="@string/button" android:layout_width="101dp"></Button>
 </RadioGroup>
 </ScrollView>
