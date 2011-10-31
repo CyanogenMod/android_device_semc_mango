@@ -1,11 +1,13 @@
 # Prebuilt kl keymaps
 usr/keylayout/atdaemon.kl
 usr/keylayout/AVRCP.kl
+usr/keylayout/qwerty.kl
 usr/keylayout/msm_pmic_pwr_key.kl
 usr/keylayout/pm8058-keypad.kl
 usr/keylayout/simple_remote.kl
 usr/keylayout/cyttsp_key.kl
 usr/keychars/us104-keyboard.kcm.bin
+usr/keychars/qwerty.kcm.bin
 usr/keylayout/us104-keyboard.kl
 usr/keylayout/usb_mouse.kl
 
@@ -69,8 +71,7 @@ usr/semc/camera/STW05BN0_BH6476.dat
 usr/semc/camera/STW05BN0_IMX072.dat
 
 ## FIRMWARE
-etc/firmware/bq27520_fw-0501_filever-0041_proj-mang_golden.bqfs
-etc/firmware/bq27520_fw-0501_filever-0041_proj-mang_golden.dffs
+etc/firmware/bq27520_fw-0507_filever-0046_proj-mang_golden.bqfs
 etc/firmware/fm_rx_init_1273.1.bts
 etc/firmware/fm_rx_init_1273.2.bts
 etc/firmware/fm_tx_init_1273.1.bts
@@ -95,11 +96,7 @@ bin/nvimport
 bin/hciattach
 etc/init.qcom.bt.sh
 etc/wifi/tiwlan.ini
-etc/wifi/wpa_supplicant.conf
-etc/wifi/tiwlan_firmware.bin
-etc/wifi/softap/hostapd.conf
 etc/wifi/softap/tiwlan_ap.ini
-etc/wifi/softap/softap_firmware.bin
 
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
