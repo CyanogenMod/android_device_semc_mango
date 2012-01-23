@@ -12,10 +12,10 @@ echo 500 > $dev/btn_trig_level  # default = 500
 
 # Proximity sensor configuration
 dev=/sys/bus/i2c/devices/0-0054/
-val_cycle=0
-val_nburst=26
-val_freq=0
-val_threshold=2
+val_cycle=2
+val_nburst=0
+val_freq=2
+val_threshold=5
 val_filter=0
 
 nv_param_loader 60240 prox_cal
@@ -30,39 +30,40 @@ case $val_calibrated in
 esac
 
 echo $val_cycle > $dev/cycle    # Duration Cycle. Valid range is 0 - 3.
-echo $val_nburst > $dev/nburst  # Number of pulses in burst. Valid range is 0 - 15. 16 - 31 is a special range for smultron only (SP)
+echo $val_nburst > $dev/nburst  # Number of pulses in burst. Valid range is 0 - 15.
 echo $val_freq > $dev/freq      # Burst frequency. Valid range is 0 - 3.
 echo $val_threshold > $dev/threshold # sensor threshold. Valid range is 0 - 15 (0.12V - 0.87V)
 echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
 
 # LMU AS3676 Configuration
 dev=/sys/devices/i2c-0/0-0040/leds
-echo 1 > $dev/lcd-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1,70,255,52,24,5,80 > $dev/lcd-backlight/als/curve  # ALS curve for group1
+echo 2,127,1,130,130,2,2 > $dev/button-backlight/als/curve  # ALS curve for group2
+echo 2,127,1,130,130,2,2 > $dev/keyboard-backlight/als/curve  # ALS curve for group2
 echo 3,0,2,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
-echo 2000 > $dev/button-backlight-rgb1/max_current
-echo 2000 > $dev/button-backlight-rgb2/max_current
-echo 1,70,255,52,24,5,80 > $dev/lcd-backlight/als/curve  # ALS curve display BL [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb1/als/curve  # ALS curve key LED 1 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb2/als/curve  # ALS curve key LED 2 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/red/als/curve  # ALS curve RGB(red) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/green/als/curve  # ALS curve RGB(green) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/blue/als/curve  # ALS curve RGB(blue) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 1 > $dev/lcd-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1 > $dev/button-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1 > $dev/keyboard-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 500 > $dev/button-backlight/max_current
+echo 5000 > $dev/keyboard-backlight/max_current
 
-# Touch panel
 dev=/sys/devices/platform/spi_qsd.0/spi0.0
 app_id=`cat  $dev/appid`
 case "$app_id" in
-	"0x0505")
-		fw=touch_smultron_innolux.hex
+	"0x0603")
+		fw=touch_mango_seiko.hex
         ;;
-	"0x0105")
-		fw=touch_smultron_sony.hex
+	"0x0103")
+		fw=touch_mango_sony_type1.hex
         ;;
-	"0x0015")
-		fw=touch_smultron_sony.hex
+	"0x0113")
+		fw=touch_mango_sony_type2.hex
+        ;;
+	"0x0203")
+		fw=touch_mango_hitachi.hex
         ;;
 	*)
-		fw=touch_smultron_sony.hex
+		fw=touch_mango_sony_type1.hex
         ;;
 esac
 cyttsp_fwloader -dev $dev -fw /system/etc/firmware/$fw
