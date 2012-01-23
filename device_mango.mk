@@ -7,9 +7,9 @@ $(call inherit-product-if-exists, vendor/semc/mango/mango-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := Xperia Mini Pro
+PRODUCT_NAME := mango
 PRODUCT_DEVICE := mango
-PRODUCT_MODEL := SK17i
+PRODUCT_MODEL := mango
 
 -include device/semc/mogami-common/mogami.mk
 
