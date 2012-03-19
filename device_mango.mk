@@ -26,6 +26,8 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/mango/overlay
 #PRODUCT_COPY_FILES += \
 #	device/semc/mango/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
+PRODUCT_PACKAGES += ProParts
+
 # Init files
 PRODUCT_COPY_FILES += \
     device/semc/mango/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
