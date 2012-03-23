@@ -23,8 +23,8 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += device/semc/mango/overlay
 
 # These are the hardware-specific configuration files
-#PRODUCT_COPY_FILES += \
-#	device/semc/mango/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
+PRODUCT_COPY_FILES += \
+	device/semc/mango/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += ProParts
 
