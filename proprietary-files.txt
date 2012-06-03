@@ -11,7 +11,7 @@ usr/keylayout/pm8058-keypad.kl
 usr/keylayout/simple_remote.kl
 usr/keylayout/cyttsp_key.kl
 
-## RIL related stuff 
+## RIL related stuff
 lib/libril.so
 bin/port-bridge
 bin/qmuxd
@@ -93,6 +93,7 @@ etc/firmware/yamato_pm4.fw
 
 ## WIFI & BT TI1271
 etc/init.qcom.bt.sh
+etc/tiwlan.ini
 etc/firmware/wl1271-fw-multirole-roc.bin
 etc/firmware/wl1271-nvs.bin
 etc/wifi/hostapd.conf
