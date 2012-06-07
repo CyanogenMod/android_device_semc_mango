@@ -124,3 +124,12 @@ etc/firmware/touch_mango_sony_type2.hex
 etc/firmware/touch_mango_seiko.hex
 etc/firmware/touch_mango_hitachi.hex
 
+#ANT+
+lib/libanthal.so
+etc/permissions/com.dsi.ant.antradio_library.xml
+etc/permissions/com.sonyericsson.suquashi.xml
+app/antstatenotifer.apk
+app/AntHalService.apk
+app/antradioservice.apk
+framework/com.dsi.ant.antradio_library.jar
+framework/com.sonyericsson.suquashi.jar
