@@ -11,24 +11,12 @@ echo 16  > $dev/btn_trig_hyst_time   # Button Hysteresis Time(Cycle) default = 1
 echo 500 > $dev/btn_trig_level  # default = 500
 
 # Proximity sensor configuration
-dev=/sys/bus/i2c/devices/0-0054
-hwid=`cat /sys/class/hwid/hwid`
-case $hwid in
- 0x0a)
-  val_cycle=2
-  val_nburst=7
-  val_freq=3
-  val_threshold=15
-  val_filter=0
-  ;;
- *)
-  val_cycle=2
-  val_nburst=8
-  val_freq=2
-  val_threshold=15
-  val_filter=0
-  ;;
-esac
+dev=/sys/bus/i2c/devices/0-0054/
+val_cycle=2
+val_nburst=0
+val_freq=2
+val_threshold=5
+val_filter=0
 
 nv_param_loader 60240 prox_cal
 val_calibrated=$?
@@ -49,15 +37,36 @@ echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
 
 # LMU AS3676 Configuration
 dev=/sys/devices/i2c-0/0-0040/leds
-echo 0,0,0,0,0,0,0 > $dev/lcd-backlight/als/curve  # ALS curve for group1
-echo 0,0,0,0,0,0,0 > $dev/button-backlight/als/curve  # ALS curve for group2
-echo 0,0,0,0,0,0,0 > $dev/keyboard-backlight/als/curve  # ALS curve for group2
-echo 0,0,0,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
-echo 0 > $dev/lcd-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
-echo 0 > $dev/button-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
-echo 0 > $dev/keyboard-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1,70,255,52,24,5,80 > $dev/lcd-backlight/als/curve  # ALS curve for group1
+echo 2,127,1,130,130,2,2 > $dev/button-backlight/als/curve  # ALS curve for group2
+echo 2,127,1,130,130,2,2 > $dev/keyboard-backlight/als/curve  # ALS curve for group2
+echo 3,0,2,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
+echo 1 > $dev/lcd-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1 > $dev/button-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
+echo 1 > $dev/keyboard-backlight/als/enable  #Sensor on/off. 1 = on, reg 90h
 echo 500 > $dev/button-backlight/max_current
 echo 5000 > $dev/keyboard-backlight/max_current
+
+dev=/sys/devices/platform/spi_qsd.0/spi0.0
+app_id=`cat  $dev/appid`
+case "$app_id" in
+	"0x0603")
+		fw=touch_mango_seiko.hex
+        ;;
+	"0x0103")
+		fw=touch_mango_sony_type1.hex
+        ;;
+	"0x0113")
+		fw=touch_mango_sony_type2.hex
+        ;;
+	"0x0203")
+		fw=touch_mango_hitachi.hex
+        ;;
+	*)
+		fw=touch_mango_sony_type1.hex
+        ;;
+esac
+cyttsp_fwloader -dev $dev -fw /system/etc/firmware/$fw
 
 # TI BQ275xx firmware loader
 bq275xx_fwloader
