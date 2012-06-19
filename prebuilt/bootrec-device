@@ -6,7 +6,7 @@ echo 122000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 echo 0 > /sys/class/android_usb/android0/enable
 echo 0FCE > /sys/class/android_usb/android0/idVendor
-echo 0166 > /sys/class/android_usb/android0/idProduct
+echo 6166 > /sys/class/android_usb/android0/idProduct
 echo mass_storage,adb > /sys/class/android_usb/android0/functions
 echo 1 > /sys/class/android_usb/android0/enable
 stop adbd
