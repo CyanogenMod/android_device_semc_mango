@@ -22,12 +22,10 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
     device/semc/mango/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
-    device/semc/mogami-common/prebuilt/init.semc.keyboard.rc:root/init.semc.keyboard.rc \
     device/semc/mango/prebuilt/pre_hw_config.sh:root/pre_hw_config.sh \
     device/semc/mango/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/msm7x30-common/prebuilt/logo_M.rle:root/logo.rle \
     device/semc/mango/prebuilt/bootrec-device:root/sbin/bootrec-device \
-    device/semc/mogami-common/prebuilt/keyswap:root/sbin/keyswap \
     device/semc/mango/recovery.fstab:root/recovery.fstab
 
 $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-mdpi.mk)
