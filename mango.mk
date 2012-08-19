@@ -28,6 +28,22 @@ PRODUCT_COPY_FILES += \
     device/semc/mango/prebuilt/bootrec-device:root/sbin/bootrec-device \
     device/semc/mango/recovery.fstab:root/recovery.fstab
 
+# Device specific configs
+PRODUCT_COPY_FILES += \
+    device/semc/mango/config/cyttsp-spi.idc:system/usr/idc/cyttsp-spi.idc \
+    device/semc/mango/config/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/semc/mango/config/qwerty2.idc:system/usr/idc/qwerty2.idc \
+    device/semc/mango/config/pm8058-keypad.idc:system/usr/idc/pm8058-keypad.idc \
+    device/semc/mango/config/pm8058-keypad.kcm:system/usr/keychars/pm8058-keypad.kcm \
+    device/semc/mango/config/atdaemon.kl:system/usr/keylayout/atdaemon.kl \
+    device/semc/mango/config/msm_pmic_pwr_key.kl:system/usr/keylayout/msm_pmic_pwr_key.kl \
+    device/semc/mango/config/pm8058-keypad.kl:system/usr/keylayout/pm8058-keypad.kl \
+    device/semc/mango/config/simple_remote.kl:system/usr/keylayout/simple_remote.kl \
+    device/semc/mango/config/cyttsp_key.kl:system/usr/keylayout/cyttsp_key.kl \
+    device/semc/mango/config/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+    device/semc/mango/config/sensors.conf:system/etc/sensors.conf \
+    device/semc/mango/config/tiwlan.ini:system/etc/tiwlan.ini
+
 $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-mdpi.mk)
 
 #LCD DENSITY
