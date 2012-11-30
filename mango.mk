@@ -5,7 +5,7 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/mango/overlay
 
 $(call inherit-product, device/semc/mogami-common/mogami.mk)
 
-$(call inherit-product, device/common/gps/gps_eu_supl.mk)
+$(call inherit-product, device/common/gps/gps_eu.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
